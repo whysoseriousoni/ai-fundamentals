@@ -16,14 +16,14 @@
   - [ ] Encoder / Decoder
   - [ ] Decoder only
 - [ ] Fine tuning
-  - [ ]LoRA
-  - [ ]QLorRA
-  - [ ]PEFT
+  - [ ] LoRA
+  - [ ] QLorRA
+  - [ ] PEFT
 - [ ] Quantization
-  - [ ]GGUF
-  - [ ]GTPQ
-  - [ ]AWQ
-  - [ ]int8/int4
+  - [ ] GGUF
+  - [ ] GTPQ
+  - [ ] AWQ
+  - [ ] int8/int4
 - [ ] Model Routing
 
 ### Database
@@ -77,7 +77,7 @@
 
 ### Scaling
 
-- [ ]**** 1 Million documents
+- [ ] 1 Million documents
   - [ ] Insert
   - [ ] Search
   - [ ] Deleting
