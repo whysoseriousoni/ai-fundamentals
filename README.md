@@ -2,7 +2,7 @@
 
 ## Topics To Cover (Checklist)
 
-### Models
+### [Models](agentic-ai\TOPICS.md)
 
 - [ ] LLM
 - [ ] SLM
@@ -26,7 +26,7 @@
   - [ ] int8/int4
 - [ ] Model Routing
 
-### Database
+### [Database](/database/TOPICS.md)
 
 - [ ] Vector DB
 - [ ] Graph DB
@@ -37,20 +37,22 @@
   - [ ] HNSW
   - [ ] IVF
   - [ ] Product Quantization
-- Metrics
-  - [ ] Recall@K
-  - [ ] Precision@K
-  - [ ] Mean Average Precision (MAP)
-  - [ ] Context Precision
-  - [ ] Mean Reciprocal Rank (MRR)
 
-### Context Window Management
+### [Metrics](/metrics/TOPICS.md)
+
+- [ ] Recall@K
+- [ ] Precision@K
+- [ ] Mean Average Precision (MAP)
+- [ ] Context Precision
+- [ ] Mean Reciprocal Rank (MRR)
+
+### [Context Window Management](/context-window/TOPICS.md)
 
 - [ ] Sliding Window
 - [ ] Summarization-based compression
 - [ ] RoPE Scaling
 
-### Concepts
+### [Concepts](/concepts/TOPICS.md)
 
 - [ ] RAG
 - [ ] Context Engineering
@@ -65,8 +67,9 @@
 - [ ] Embedding
   - [ ] Language Agnostic Embedding
   - [ ] LaBSE (Language Agnostic BERT Sentence Embedding)
+- [ ] Skills
 
-### Hallucination
+### [Hallucination](/hallucination/TOPICS.md)
 
 - [ ] Hallucination
 - [ ] Prevention
@@ -75,7 +78,7 @@
   - [ ] Citation
   - [ ] Source Attribution
 
-### Scaling
+### [Scaling](scaling/TOPICS.md)
 
 - [ ] 1 Million documents
   - [ ] Insert
@@ -90,7 +93,7 @@
 - [ ] Rate limiting
 - [ ] Concurrency Handling
 
-### Agentic AI
+### [Agentic AI](/agentic-ai/TOPICS.md)
 
 - [ ] Agentic AI
 - [ ] Multi agent orchestration
@@ -101,7 +104,7 @@
   - [ ] Reflexion
 - [ ] Human in the loop patterns
 
-### Guardrails
+### [Guardrails](/guardrails/TOPICS.md)
 
 - [ ] Types of guardrails
 - [ ] Working with Guardrails
@@ -109,7 +112,7 @@
 - [ ] Prompt injection defense
 - [ ] Output content moderation
 
-### Evaluation (EVAL)
+### [Evaluation (EVAL)](/evaluations/TOPICS.md)
 
 - [ ] Manual EVAL
 - [ ] Automatic EVAL
@@ -124,7 +127,7 @@
 - [ ] Regression test
   - [ ] Prompt / Model Changes
 
-### Performance Monitoring
+### [Observability](/Observability/TOPICS.md)
 
 - [ ] Logging
 - [ ] Traceback
@@ -132,14 +135,14 @@
 - [ ] Cost tracking per request/user
 - [ ] A/B testing in production
 
-### Tools
+### [Tools](/tools/TOPICS.md)
 
 - [ ] Creating tools
 - [ ] Managing tools
 - [ ] Monitoring
 - [ ] Performance
 
-### Applications & Packages
+### [Applications & Packages](/application-packages/TOPICS.md)
 
 - [ ] Lang graph
 - [ ] Lang chain
@@ -153,7 +156,7 @@
   - [ ] DeepEval
   - [ ] Promptfoo
   
-### Text ML Concepts
+### [Text ML Concepts](/text-ml-concepts/TOPICS.md)
 
 - [ ] N-Grams
 - [ ] Tokenization
@@ -164,18 +167,18 @@
 - [ ] (BPE) Byte pair encoding
 - [ ] Sentence Piece
 
-### Application Designing
+### [System Designing](/system-designing/TOPICS.md)
 
 - [ ] System to process 1 million documents
 - [ ] 
 
-### Security & Compliance
+### [Security & Compliance](/security-compliance/TOPICS.md)
 
 - [ ] Data privacy in LLM pipelines (PII leakage, data residency)
 - [ ] Model/output audit trails
 - [ ] Licensing considerations for open models
 
-### Deployment
+### [Deployment](/deployment/TOPICS.md)
 
 - [ ] Serving frameworks: vLLM, TGI, Ollama, TensorRT-LLM
 - [ ] API gateway patterns for LLM services

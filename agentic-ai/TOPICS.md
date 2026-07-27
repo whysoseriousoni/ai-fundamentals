@@ -1,0 +1,23 @@
+# [Models](agentic-ai\TOPICS.md)
+
+- [ ] LLM
+- [ ] SLM
+- [ ] Context
+- [ ] Memory
+- [ ] Local Host
+- [ ] Transformer Architecture
+  - [ ] Attention
+  - [ ] Self-attention
+  - [ ] Positional Encoding
+  - [ ] Encoder / Decoder
+  - [ ] Decoder only
+- [ ] Fine tuning
+  - [ ] LoRA
+  - [ ] QLorRA
+  - [ ] PEFT
+- [ ] Quantization
+  - [ ] GGUF
+  - [ ] GTPQ
+  - [ ] AWQ
+  - [ ] int8/int4
+- [ ] Model Routing
