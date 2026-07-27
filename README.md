@@ -37,6 +37,12 @@
   - [ ] HNSW
   - [ ] IVF
   - [ ] Product Quantization
+- Metrics
+  - [ ] Recall@K
+  - [ ] Precision@K
+  - [ ] Mean Average Precision (MAP)
+  - [ ] Context Precision
+  - [ ] Mean Reciprocal Rank (MRR)
 
 ### Context Window Management
 
@@ -51,8 +57,14 @@
 - [ ] Prompt Engineering
 - [ ] Chunking
 - [ ] Vectors
-- [ ] Embedding
 - [ ] Tools
+  - [ ] Creation
+  - [ ] Versioning
+  - [ ] Usage
+  - [ ] API Key management
+- [ ] Embedding
+  - [ ] Language Agnostic Embedding
+  - [ ] LaBSE (Language Agnostic BERT Sentence Embedding)
 
 ### Hallucination
 
@@ -65,7 +77,7 @@
 
 ### Scaling
 
-- [ ] 1 Million documents
+- [ ]**** 1 Million documents
   - [ ] Insert
   - [ ] Search
   - [ ] Deleting
@@ -103,10 +115,10 @@
 - [ ] Automatic EVAL
 - [ ] User Feedback inclusion
 - [ ] Eval metrics
-  - Faithfulness,
-  - Relevance
-  - Answer correctness
-  - BLEU/ROUGE/BERTScore
+  - [ ] Faithfulness,
+  - [ ] Relevance
+  - [ ] Answer correctness
+  - [ ] BLEU/ROUGE/BERTScore
 - [ ] LLM-as-Judge
 - [ ] Golden dataset / Test set curation
 - [ ] Regression test
