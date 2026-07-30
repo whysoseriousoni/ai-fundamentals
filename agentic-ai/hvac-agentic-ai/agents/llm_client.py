@@ -13,10 +13,10 @@ import os
 from openai import AsyncOpenAI
 
 MODEL_FAST_BASE_URL = os.environ.get("MODEL_FAST_URL", "http://127.0.0.1:8000/v1")
-MODEL_FAST_NAME = os.environ.get("MODEL_FAST_NAME", "Qwen2.5-1.5B-Instruct")
+MODEL_FAST_NAME = os.environ.get("MODEL_FAST_NAME", "Qwen3-0.6B-Instruct")
 
 MODEL_REASON_BASE_URL = os.environ.get("MODEL_REASON_URL", "http://127.0.0.1:8001/v1")
-MODEL_REASON_NAME = os.environ.get("MODEL_REASON_NAME", "Qwen2.5-3B-Instruct")
+MODEL_REASON_NAME = os.environ.get("MODEL_REASON_NAME", "Qwen3-4B-Instruct")
 
 _fast_client = AsyncOpenAI(base_url=MODEL_FAST_BASE_URL, api_key="not-needed")
 _reason_client = AsyncOpenAI(base_url=MODEL_REASON_BASE_URL, api_key="not-needed")

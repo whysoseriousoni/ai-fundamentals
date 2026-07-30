@@ -19,6 +19,8 @@ from pathlib import Path
 from agents.llm_client import chat_completion
 from agents.mcp_tools import ScopedToolClient, list_all_tools
 
+from openai import BadRequestError
+
 PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
 
 MAX_TOOL_HOPS = 4  # safety valve against infinite tool-call loops
@@ -46,7 +48,11 @@ class BaseLLMAgent:
         ]
 
         for _ in range(MAX_TOOL_HOPS):
-            response = await chat_completion(self.tier, messages, tools=schemas)
+            try:
+                response = await chat_completion(self.tier, messages, tools=schemas)
+            except BadRequestError as e:
+                return f"<LLM Response So Far> {messages} </LLM Response So Far>\n[{self.agent_key} failed: {e.message}] — check vLLM server logs for the full rejection reason"
+
             self.context_monitor.record(self.agent_key, response.usage.model_dump())
 
             choice = response.choices[0]

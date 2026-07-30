@@ -1,0 +1,124 @@
+// .vscode/launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Py312: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python"
+        },
+        {
+            "name": "1. Generate Sample Data",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "data/generate_sample_data.py",
+            "cwd": "${workspaceFolder}/agentic-ai/hvac-agentic-ai/",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python",
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "2. MCP Server (tools)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "mcp_server/server.py",
+            "cwd": "${workspaceFolder}/agentic-ai/hvac-agentic-ai",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python",
+            "console": "integratedTerminal",
+            "env": {
+                "MCP_TRANSPORT": "streamable-http",
+                "MCP_PORT": "8010"
+            }
+        },
+        {
+            "name": "3. vLLM - Router (Qwen3-0.6B)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "vllm.entrypoints.openai.api_server",
+            "cwd": "${workspaceFolder}/agentic-ai/hvac-agentic-ai",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python",
+            "console": "integratedTerminal",
+            "args": [
+                "--model",
+                "/mnt/e/models/Qwen3-0.6B",
+                "--served-model-name",
+                "Qwen3-0.6B-Instruct",
+                "--port",
+                "8000",
+                "--gpu-memory-utilization",
+                "0.22",
+                "--max-model-len",
+                "4096",
+                "--max-num-seqs",
+                "8",
+                "--enforce-eager",
+                "--enable-auto-tool-choice",
+                "--tool-call-parser",
+                "hermes"
+            ]
+        },
+        {
+            "name": "4. vLLM - Reasoner (Qwen3-4B-AWQ)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "vllm.entrypoints.openai.api_server",
+            "cwd": "${workspaceFolder}/agentic-ai/hvac-agentic-ai",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python",
+            "console": "integratedTerminal",
+            "args": [
+                "--model",
+                "/mnt/e/models/Qwen3-4B-AWQ",
+                "--served-model-name",
+                "Qwen3-4B-Instruct",
+                "--port",
+                "8001",
+                "--quantization",
+                "awq",
+                "--gpu-memory-utilization",
+                "0.5",
+                "--max-model-len",
+                "4096",
+                "--max-num-seqs",
+                "8",
+                "--enforce-eager",
+                "--enable-auto-tool-choice",
+                "--tool-call-parser",
+                "hermes"
+            ]
+        },
+        {
+            "name": "5. Orchestration API (uvicorn)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "cwd": "${workspaceFolder}/agentic-ai/hvac-agentic-ai",
+            "python": "/home/whysoseriousoni/miniconda3/envs/py312/bin/python",
+            "console": "integratedTerminal",
+            "args": [
+                "api.main:app",
+                "--reload",
+                "--port",
+                "8080"
+            ],
+            "env": {
+                "MCP_URL": "http://127.0.0.1:8010/mcp",
+                "MODEL_FAST_URL": "http://127.0.0.1:8000/v1",
+                "MODEL_FAST_NAME": "Qwen3-0.6B-Instruct",
+                "MODEL_REASON_URL": "http://127.0.0.1:8001/v1",
+                "MODEL_REASON_NAME": "Qwen3-4B-Instruct"
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Start MCP + API (lightweight pair)",
+            "configurations": [
+                "2. MCP Server (tools)",
+                "5. Orchestration API (uvicorn)"
+            ],
+            "stopAll": true
+        }
+    ]
+}
