@@ -1,0 +1,126 @@
+{
+  "UNIT-0001": {
+    "unit_id": "UNIT-0001",
+    "timestamp": "2026-07-29T18:13:21.174925+00:00",
+    "readings": {
+      "temperature_c": 8.0,
+      "pressure_psi_discharge": 297.9,
+      "pressure_psi_suction": 66.0,
+      "vibration_mm_s": 1.47,
+      "current_draw_amps": 6.72,
+      "airflow_cfm": 383.1,
+      "humidity_pct": 51.8,
+      "runtime_hours_today": 11.7,
+      "_injected_fault_code_for_demo": "E1"
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  },
+  "UNIT-0002": {
+    "unit_id": "UNIT-0002",
+    "timestamp": "2026-07-29T18:13:21.174946+00:00",
+    "readings": {
+      "temperature_c": 7.4,
+      "pressure_psi_discharge": 193.9,
+      "pressure_psi_suction": 66.5,
+      "vibration_mm_s": 1.65,
+      "current_draw_amps": 16.84,
+      "airflow_cfm": 407.0,
+      "humidity_pct": 47.2,
+      "runtime_hours_today": 6.1,
+      "_injected_fault_code_for_demo": "E5"
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  },
+  "UNIT-0003": {
+    "unit_id": "UNIT-0003",
+    "timestamp": "2026-07-29T18:13:21.174954+00:00",
+    "readings": {
+      "temperature_c": 8.3,
+      "pressure_psi_discharge": 228.7,
+      "pressure_psi_suction": 71.4,
+      "vibration_mm_s": 1.33,
+      "current_draw_amps": 8.15,
+      "airflow_cfm": 442.8,
+      "humidity_pct": 57.2,
+      "runtime_hours_today": 8.9
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  },
+  "UNIT-0004": {
+    "unit_id": "UNIT-0004",
+    "timestamp": "2026-07-29T18:13:21.174962+00:00",
+    "readings": {
+      "temperature_c": 4.4,
+      "pressure_psi_discharge": 191.4,
+      "pressure_psi_suction": 68.7,
+      "vibration_mm_s": 0.62,
+      "current_draw_amps": 5.16,
+      "airflow_cfm": 365.2,
+      "humidity_pct": 45.6,
+      "runtime_hours_today": 9.6
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  },
+  "UNIT-0005": {
+    "unit_id": "UNIT-0005",
+    "timestamp": "2026-07-29T18:13:21.174970+00:00",
+    "readings": {
+      "temperature_c": 7.0,
+      "pressure_psi_discharge": 190.5,
+      "pressure_psi_suction": 31.6,
+      "vibration_mm_s": 1.9,
+      "current_draw_amps": 7.24,
+      "airflow_cfm": 441.4,
+      "humidity_pct": 43.4,
+      "runtime_hours_today": 10.7,
+      "_injected_fault_code_for_demo": "E2"
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  },
+  "UNIT-0006": {
+    "unit_id": "UNIT-0006",
+    "timestamp": "2026-07-29T18:13:21.174977+00:00",
+    "readings": {
+      "temperature_c": 11.4,
+      "pressure_psi_discharge": 214.4,
+      "pressure_psi_suction": 66.6,
+      "vibration_mm_s": 5.44,
+      "current_draw_amps": 7.84,
+      "airflow_cfm": 358.4,
+      "humidity_pct": 56.4,
+      "runtime_hours_today": 11.7,
+      "_injected_fault_code_for_demo": "E9"
+    },
+    "thresholds": {
+      "pressure_psi_discharge_max": 250,
+      "pressure_psi_suction_min": 55,
+      "vibration_mm_s_max": 3.5,
+      "current_draw_amps_max": 11
+    }
+  }
+}
