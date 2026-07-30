@@ -1,0 +1,30 @@
+{
+  "SplitAC-1.5T-InverterX": [
+    "PN-COMP-15T",
+    "PN-CAP-35UF",
+    "PN-FANMOTOR-STD",
+    "PN-PCB-INV-A3",
+    "PN-FILTER-STD"
+  ],
+  "DuctedAC-5T-CommercialPro": [
+    "PN-COMP-50T",
+    "PN-CAP-50UF",
+    "PN-FANMOTOR-HD",
+    "PN-PCB-COMM-B1",
+    "PN-FILTER-HD"
+  ],
+  "VRF-10T-EnterpriseFlow": [
+    "PN-COMP-100T-VRF",
+    "PN-PCB-VRF-C2",
+    "PN-FANMOTOR-VRF",
+    "PN-EXV-VRF",
+    "PN-FILTER-HD"
+  ],
+  "SplitAC-1T-EcoLite": [
+    "PN-COMP-10T",
+    "PN-CAP-25UF",
+    "PN-FANMOTOR-STD",
+    "PN-PCB-INV-A1",
+    "PN-FILTER-STD"
+  ]
+}
